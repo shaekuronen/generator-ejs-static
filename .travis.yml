@@ -4,5 +4,5 @@ node_js:
   - '0.10'
 before_install:
   - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-generator-ejs-static' ]; then cd .. && eval "mv $currentfolder generator-generator-ejs-static" && cd generator-generator-ejs-static; fi
+  - if [ "$currentfolder" != 'generator-ejs-static' ]; then cd .. && eval "mv $currentfolder generator-ejs-static" && cd generator-ejs-static; fi
 
