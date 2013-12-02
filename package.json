@@ -37,5 +37,15 @@
     {
       "type": "MIT"
     }
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "ejs",
+    "static html",
+    "static site generator",
+    "templates",
+    "templating engine",
+    "template",
+    "embedded js"
   ]
 }
