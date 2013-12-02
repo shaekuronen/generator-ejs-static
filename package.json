@@ -3,7 +3,14 @@
   "version": "0.0.0",
   "description": "A generator for Yeoman",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "ejs",
+    "static html",
+    "static site generator",
+    "templates",
+    "templating engine",
+    "template",
+    "embedded js"
   ],
   "homepage": "https://github.com/shaekuronen/generator-ejs-static",
   "bugs": "https://github.com/shaekuronen/generator-ejs-static/issues",
