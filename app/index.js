@@ -4,7 +4,7 @@ var path = require('path');
 var yeoman = require('yeoman-generator');
 
 
-var GeneratorEjsStaticGenerator = module.exports = function GeneratorEjsStaticGenerator(args, options, config) {
+var EjsStaticGenerator = module.exports = function EjsStaticGenerator(args, options, config) {
   yeoman.generators.Base.apply(this, arguments);
 
   this.on('end', function () {
@@ -14,9 +14,9 @@ var GeneratorEjsStaticGenerator = module.exports = function GeneratorEjsStaticGe
   this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
 };
 
-util.inherits(GeneratorEjsStaticGenerator, yeoman.generators.Base);
+util.inherits(EjsStaticGenerator, yeoman.generators.Base);
 
-GeneratorEjsStaticGenerator.prototype.askFor = function askFor() {
+EjsStaticGenerator.prototype.askFor = function askFor() {
   var cb = this.async();
 
   // have Yeoman greet the user.
@@ -36,7 +36,7 @@ GeneratorEjsStaticGenerator.prototype.askFor = function askFor() {
   }.bind(this));
 };
 
-GeneratorEjsStaticGenerator.prototype.app = function app() {
+EjsStaticGenerator.prototype.app = function app() {
   this.mkdir('app');
   this.mkdir('app/templates');
 
@@ -44,7 +44,7 @@ GeneratorEjsStaticGenerator.prototype.app = function app() {
   this.copy('_bower.json', 'bower.json');
 };
 
-GeneratorEjsStaticGenerator.prototype.projectfiles = function projectfiles() {
+EjsStaticGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('editorconfig', '.editorconfig');
   this.copy('jshintrc', '.jshintrc');
 };
