@@ -37,14 +37,21 @@ EjsStaticGenerator.prototype.askFor = function askFor() {
 };
 
 EjsStaticGenerator.prototype.app = function app() {
-  this.mkdir('app');
-  this.mkdir('app/templates');
+  // this.mkdir('app');
+  // this.mkdir('app/templates');
 
-  this.copy('_package.json', 'package.json');
-  this.copy('_bower.json', 'bower.json');
+  // this.copy('_package.json', 'package.json');
+  // this.copy('_bower.json', 'bower.json');
+
+  this.copy('package.json', 'package.json');
+  this.copy('.jshintrc', '.jshintrc');
+  this.copy('.gitignore', '.gitignore');
+  this.copy('Gruntfile.js', 'Gruntfile.js');
+
+  this.directory('dev','dev');
 };
 
 EjsStaticGenerator.prototype.projectfiles = function projectfiles() {
-  this.copy('editorconfig', '.editorconfig');
-  this.copy('jshintrc', '.jshintrc');
+  // this.copy('editorconfig', '.editorconfig');
+  // this.copy('jshintrc', '.jshintrc');
 };
