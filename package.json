@@ -1,12 +1,12 @@
 {
-  "name": "generator-generator-ejs-static",
+  "name": "generator-ejs-static",
   "version": "0.0.0",
   "description": "A generator for Yeoman",
   "keywords": [
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/shaekuronen/generator-generator-ejs-static",
-  "bugs": "https://github.com/shaekuronen/generator-generator-ejs-static/issues",
+  "homepage": "https://github.com/shaekuronen/generator-ejs-static",
+  "bugs": "https://github.com/shaekuronen/generator-ejs-static/issues",
   "author": {
     "name": "Shae Kuronen",
     "email": "",
@@ -15,7 +15,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/shaekuronen/generator-generator-ejs-static.git"
+    "url": "git://github.com/shaekuronen/generator-ejs-static.git"
   },
   "scripts": {
     "test": "mocha"
