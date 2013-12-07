@@ -1,13 +1,13 @@
 {
-  "name": "project_name",
-  "version": "0.1.0",
-  "description": "project description here",
-  "homepage": "http://github.com/shaekuronen/project.git",
-  "bugs": "http://github.com/shaekuronen/testing/issues",
+  "name": "<%= _.slugify(project_name) %>",
+  "version": "<%= project_version %>",
+  "description": "<%= project_description %>",
+  "homepage": "https://github.com/<%= github_username %>/<%= _.slugify(project_name) %>.git",
+  "bugs": "https://github.com/<%= github_username %>/<%= _.slugify(project_name) %>/issues",
   "author": {
-    "name": "Shae Kuronen",
-    "email": "",
-    "url": "https://github.com/shaekuronen"
+    "name": "<%= author_name %>",
+    "email": "<%= author_email %>",
+    "url": "<%= author_url %>"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
