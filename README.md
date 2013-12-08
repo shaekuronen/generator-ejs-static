@@ -1,5 +1,5 @@
-generator-ejs-static
+Yeoman Generator
 ====================
 
-Yeoman Generator for Grunt EJS Static
+Currently, documentation at [Grunt EJS Static](https://github.com/shaekuronen/grunt-ejs-static)
 
