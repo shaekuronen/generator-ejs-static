@@ -80,8 +80,8 @@ EjsStaticGenerator.prototype.app = function app() {
   // this.copy('_package.json', 'package.json');
   // this.copy('_bower.json', 'bower.json');
 
-  this.copy('.jshintrc', '.jshintrc');
-  this.copy('.gitignore', '.gitignore');
+  this.copy('_jshintrc', '.jshintrc');
+  this.copy('_gitignore', '.gitignore');
   this.copy('Gruntfile.js', 'Gruntfile.js');
 
   this.directory('dev','dev');
