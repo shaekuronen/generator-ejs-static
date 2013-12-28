@@ -222,6 +222,25 @@ module.exports = function(grunt) {
       },
       "uglify" : true,
       "parseFiles" : false
+    },
+
+    autoprefixer: {
+      options: {
+        // task-specific options go here
+      },
+      preview: {
+        expand: true,
+        flatten: false,
+        // setting only source overwrites source files
+        src: 'preview/css/**/*.css'
+      },
+      optimize: {
+        options: {
+          // Target-specific options go here.
+        },
+        // setting only source overwrites source files
+        src: 'production/css/main.*.css'
+      }
     }
 
   });
@@ -251,6 +270,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks("grunt-modernizr");
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-ejs-static');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
@@ -261,6 +281,7 @@ module.exports = function(grunt) {
       'clean:preview',
       'modernizr',
       'copy:preview',
+      'autoprefixer:preview',
       'ejs_static:preview',
       'connect:preview',
       'watch'
@@ -302,6 +323,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-ejs-static');
     grunt.loadNpmTasks("grunt-modernizr");
@@ -319,6 +341,7 @@ module.exports = function(grunt) {
       'uglify',
       'filerev',
       'usemin',
+      'autoprefixer:optimize',
       'ejs_static:optimize',
       'clean:post_optimize',
       'imagemin',
