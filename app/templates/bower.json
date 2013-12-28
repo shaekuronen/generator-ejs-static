@@ -3,7 +3,8 @@
   "version": "<%= project_version %>",
   "dependencies": {},
   "devDependencies": {
-    "jquery": "~1.10.2"
+    "jquery": "~1.10.2",
+    "skeleton-sass": "1.5.3"
   }
 }
 
