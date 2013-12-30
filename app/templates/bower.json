@@ -1,9 +1,0 @@
-{
-  "name": "<%= _.slugify(project_name) %>",
-  "version": "<%= project_version %>",
-  "dependencies": {},
-  "devDependencies": {
-    "jquery": "~1.10.2"
-  }
-}
-
