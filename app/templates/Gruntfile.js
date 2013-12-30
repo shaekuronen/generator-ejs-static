@@ -71,6 +71,7 @@ module.exports = function(grunt) {
     copy: {
       preview: {
         files: [
+          {expand: true, cwd: 'dev/', src: ['bower_components/**'], dest: 'preview/'},
           {expand: true, cwd: 'dev/', src: ['img/**'], dest: 'preview/'},
           {expand: true, cwd: 'dev/', src: ['css/**'], dest: 'preview/'},
           {expand: true, cwd: 'dev/', src: ['js/**'], dest: 'preview/'},
