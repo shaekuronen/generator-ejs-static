@@ -36,6 +36,7 @@ module.exports = function(grunt) {
       },
       post_optimize: {
         src: [
+          'production/bower_components/',
           'production/templates/',
           'production/scripts.ejs',
           'production/head.ejs'
