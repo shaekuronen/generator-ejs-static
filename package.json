@@ -1,6 +1,6 @@
 {
   "name": "generator-ejs-static",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A generator for Yeoman",
   "homepage": "https://github.com/shaekuronen/generator-ejs-static",
   "bugs": "https://github.com/shaekuronen/generator-ejs-static/issues",
