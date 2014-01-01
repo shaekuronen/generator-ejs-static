@@ -1,3 +1,3 @@
 
-var go_GLOBAL = go_GLOBAL || {};
+window.go_GLOBAL = window.go_GLOBAL || {};
 
