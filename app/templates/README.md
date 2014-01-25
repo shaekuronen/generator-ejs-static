@@ -1,9 +1,7 @@
-grunt-ejs-static-boilerplate
-============================
+Yeoman Generator
+====================
 
-Boilerplate for Grunt EJS Static Grunt Plugin
-
-Included in the boilerplate...
+Included in the generator...
 - Concatentate, minify, and rev JS and CSS files
 - Minify images
 - Server-side Templating w/ EJS
@@ -11,3 +9,5 @@ Included in the boilerplate...
 - Local Server w/ Node Connect
 - LiveReload
 - JSHint
+
+Documentation for [Grunt EJS Static](https://github.com/shaekuronen/grunt-ejs-static)
